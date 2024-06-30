@@ -28,24 +28,24 @@ userInput.addEventListener("focus", function(){
 
 function pickRandomNumber(){
   computerNum = Math.floor(Math.random()*100)+1;
-  console.log("정답",computerNum);
+  console.log("CORRECT",computerNum);
 }
 
 function play () {
   let userValue = userInput.value
 
   if(userValue<0 || userValue>100) {
-    resultArea.textContent = "1과 100사이 숫자를 입력해주세요"
+    resultArea.textContent = "Please enter a number between 1~100"
     return;
   }
   
   if(history.includes(userValue)) {
-    resultArea.textContent = "이미 입력한 숫자입니다. 다른숫자를 입력해주세요"
+    resultArea.textContent = "You've already entered this number. Please enter a different number."
     return;
   }
 
   chances --;
-  chanceArea.textContent = `남은기회:${chances}번`;
+  chanceArea.textContent = `REMAINING : ${chances} TIMES`;
   console.log("chance", chances);
 
    if(userValue < computerNum) {
@@ -53,7 +53,7 @@ function play () {
   } else if (userValue > computerNum){
     resultArea.textContent = "DOWN▼";
   } else {
-    resultArea.textContent= "정답";
+    resultArea.textContent= "CORRECT!";
     gameOver = true
   }
 
@@ -75,7 +75,7 @@ function reset() {
   //새로운 번호 생성되고
   pickRandomNumber()
   //resultArea 문구 변경하기
-  resultArea.textContent = "결과가 나온다"
+  resultArea.textContent = "THIS IS THE RESULT"
 }
 
 pickRandomNumber()

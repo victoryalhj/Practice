@@ -1,0 +1,66 @@
+:root {
+  /*color*/
+  --color-white: #fff;
+  --color-green: #42b883;
+  --color-red: #ff0000;
+
+}
+body {
+  margin: 0;
+}
+.game {
+  /* position: relative; */
+  background-image: url(./img/soju.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.game .box {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  width: 400px;
+  height: 500px;
+  border: solid var(--color-green) 5px;
+  border-radius: 5px;
+}
+#result-area {
+  font-weight: 700;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#chance-area {
+  color: var(--color-red);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.game .box #zombi {
+  width: 100%;
+  padding-bottom: 10px;
+}
+#user-input {
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+}
+#play-button, 
+#reset-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  font-weight: 700;
+}
+#play-button {
+  background-color: var(--color-green);
+}
+#reset-button {
+  background-color: var(--color-red);
+}
