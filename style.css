@@ -24,8 +24,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-  width: 800px;
-  height: 1000px;
+  width: 700px;
+  height: 800px;
   border: solid var(--color-green) 10px;
   border-radius: 7px;
 }
