@@ -25,7 +25,7 @@ body {
   align-items: center;
   background-color: var(--color-white);
   width: 800px;
-  height: 900px;
+  height: 1000px;
   border: solid var(--color-green) 10px;
   border-radius: 7px;
 }
