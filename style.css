@@ -9,7 +9,6 @@ body {
   margin: 0;
 }
 .game {
-  /* position: relative; */
   background-image: url(./img/soju.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +38,9 @@ body {
   color: var(--color-red);
   font-weight: 700;
   font-size: 40px;
+}
+#computer-number {
+  font-size: 20px;
 }
 .game .box #zombi {
   width: 100%;

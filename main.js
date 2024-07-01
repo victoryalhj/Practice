@@ -15,10 +15,11 @@ let playButton = document.getElementById("play-button");
 let userInput = document.getElementById("user-input");
 let resultArea = document.getElementById("result-area");
 let resetButton = document.getElementById("reset-button");
-let chances = 5;
+let chances = 3;
 let gameOver = false;
-let chanceArea = document.getElementById("chance-area")
-let history = []
+let chanceArea = document.getElementById("chance-area");
+let history = [];
+let computerNumArea = document.getElementById("computer-number");
 
 playButton.addEventListener("click", play)
 resetButton.addEventListener("click", reset)
@@ -28,6 +29,7 @@ userInput.addEventListener("focus", function(){
 
 function pickRandomNumber(){
   computerNum = Math.floor(Math.random()*100)+1;
+  computerNumArea.textContent = `CORRECT NUMBER: ${computerNum}`;
   console.log("CORRECT",computerNum);
 }
 
