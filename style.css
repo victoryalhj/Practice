@@ -38,6 +38,7 @@ body {
   color: var(--color-red);
   font-weight: 700;
   font-size: 40px;
+  padding-bottom: 10px;
 }
 #computer-number {
   font-size: 20px;

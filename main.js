@@ -52,10 +52,13 @@ function play () {
 
    if(userValue < computerNum) {
     resultArea.textContent = "UP▲";
+    resultArea.style.color = "black";
   } else if (userValue > computerNum){
     resultArea.textContent = "DOWN▼";
+    resultArea.style.color = "black";
   } else {
     resultArea.textContent= "CORRECT!";
+    resultArea.style.color = "yellow";
     gameOver = true
   }
 
@@ -70,14 +73,21 @@ function play () {
     playButton.disabled = true;
   }
 }
+//reset
+//user input창이 깨끗하게 정리
+//새로운 번호가 생성되고
+//
 
 function reset() {
-  //user input 창이 깨끗하게
-  userInput.value = ""
-  //새로운 번호 생성되고
-  pickRandomNumber()
-  //resultArea 문구 변경하기
-  resultArea.textContent = "THIS IS THE RESULT"
+  userInput.value = "";
+  pickRandomNumber();
+  resultArea.textContent = "THIS IS THE RESULT";
+  resultArea.style.color = "black";
+  chances = 3;
+  gameOver = false;
+  playButton.disabled = false;
+  history = [];
+  chanceArea.textContent = `REMAINING : ${chances} TIMES`;
 }
 
 pickRandomNumber()
