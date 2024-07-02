@@ -58,7 +58,7 @@ function play () {
     resultArea.style.color = "black";
   } else {
     resultArea.textContent= "CORRECT!";
-    resultArea.style.color = "yellow";
+    resultArea.style.color = "blue";
     gameOver = true
   }
 
